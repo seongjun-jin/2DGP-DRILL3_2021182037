@@ -10,7 +10,7 @@ def draw_boy(x,y):
     clear_canvas_now()
     boy.draw_now(x,y)
     grass.draw_now(400,10)
-    delay(0.01)
+    delay(0.05)
 
 def run_circle():
     r, cx, cy = 300, 800//2, 600//2
