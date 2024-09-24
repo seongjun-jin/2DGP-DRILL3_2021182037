@@ -9,6 +9,7 @@ grass = load_image('grass.png')
 def draw_boy(x,y):
     clear_canvas_now()
     boy.draw_now(x,y)
+    grass.draw_now(400,10)
     delay(0.01)
 
 def run_circle():
@@ -63,7 +64,5 @@ while True:
     run_circle()
     run_Rectangle()
     run_triangle()
-    break
     
-
 close_canvas()
