@@ -42,10 +42,27 @@ def run_Rectangle():
     run_bottom()
     run_left()
     
+def run_trileft():
+    for z in range(0, 400, 10):
+        x = z
+        y = z
+        draw_boy(x,y)
+            
+def run_triright():
+    for z in range(0, 400, 10):
+        x = 400 + z
+        y = 400 -z
+        draw_boy(x,y)
 
+def run_triangle():
+    run_bottom()
+    run_trileft()
+    run_triright()
+    
 while True:
-    #run_circle()
+    run_circle()
     run_Rectangle()
+    run_triangle()
     break
     
 
